@@ -1,0 +1,15 @@
+#:import WheyScreen screens.wheypro.WheyScreen
+<MainWindow>:
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba: rgba('#ffffff')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    ScreenManager:
+        id: scrn_mngr
+        Screen:
+            name: 'scrn_mngr'
+            WheyScreen:
+                id: whey_screen
