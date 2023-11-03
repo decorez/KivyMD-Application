@@ -1,10 +1,46 @@
+#:import IconButton widgets.buttons.IconButton
+#:import RoundedButton widgets.buttons.RoundedButton
+#:import Text widgets.labels.Text
+
 <WheyScreen>:
     canvas.before:
         Color:
-            rgba: rgba('#f2f2f2')
+            rgba: app.colors.white
         Rectangle:
             pos: self.pos
             size: self.size
-    Label:
-        text: 'in WheyProtein Screen'
-        color: [0,0,1,1]
+    RelativeLayout:
+        BoxLayout:
+            orientation: 'vertical'
+            BoxLayout:
+                size_hint_y: .7
+                canvas.before:
+                    Color:
+                        rgba: app.colors.primary
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            BoxLayout:
+                size_hint_y: .3
+        BoxLayout:
+            orientation: 'vertical'
+            AnchorLayout:
+                size_hint_y: .6
+                padding: dp(12)
+                anchor_x: 'left'
+                anchor_y: 'top'
+                BoxLayout:
+                    padding: dp(8)
+                    size_hint: [None, None]
+                    size: [dp(32), dp(32)]
+                    canvas.before:
+                        Color:
+                            rgba: app.colors.white
+                        RoundedRectangle:
+                            pos: self.pos
+                            size: self.size
+                            radius: [dp(8)]
+                    IconButton:
+                        source: 'assets/icons/back.png'
+            BoxLayout:
+                size_hint_y: .4
