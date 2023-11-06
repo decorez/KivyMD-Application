@@ -6,12 +6,14 @@ from .screen import MainWindow
 
 class MainApp(App):
     colors = QueryDict()
-    colors.primary = rgba('#9E7EED')
-    colors.primary = rgba('#1B0B42')
+    colors.primary = rgba('#8ee3fa')
+    colors.secondary = rgba('#1B0B42')
     colors.warning = rgba('#F4D73C')
     colors.danger = rgba('#E86767')
     colors.success = rgba('#88D7CF')
     colors.white = rgba('#FFFFFF')
+    colors.grey = rgba('C4C4C4')
+    colors.black = rgba('#000000')
 
     fonts = QueryDict()
     fonts.heading = 'assets/fonts/Nunito-Bold.ttf'

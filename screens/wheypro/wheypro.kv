@@ -42,5 +42,74 @@
                             radius: [dp(8)]
                     IconButton:
                         source: 'assets/icons/back.png'
+                        size_hint_x: None
+                        width: self.height
             BoxLayout:
                 size_hint_y: .4
+                padding: dp(12)
+                spacing: sp(8)
+                orientation: 'vertical'
+                canvas.before:
+                    Color:
+                        rgba: app.colors.white
+                    RoundedRectangle:
+                        pos: self.pos
+                        size: self.size
+                        radius: [dp(16), dp(16), 0, 0]
+                BoxLayout:
+                    size_hint_y: None
+                    height: dp(24)
+                    Text:
+                        text: 'WheyProtein Basket'
+                        font_name: app.fonts.heading
+                        font_size: app.fonts.size.h1
+                        color: app.colors.secondary
+                    AnchorLayout:
+                        size_hint_x: None
+                        width: self.height
+                        padding: dp(10)
+                        anchor_x: 'right'
+                        IconButton:
+                            source: 'assets/icons/fav-filled.png'
+                BoxLayout:
+                    size_hint_y: None
+                    height: dp(18)
+                    Text:
+                        text: 'aa'
+                        font_name: app.fonts.subheading
+                        font_size: app.fonts.size.h6
+                        color: app.colors.grey
+                    Widget:
+                        size_hint_x: None
+                        width: self.height
+                BoxLayout:
+                    size_hint_y: None
+                    height: dp(22)
+                    Text:
+                        text: 'a'
+                        font_name: app.fonts.subheading
+                        font_size: app.fonts.size.h6
+                        color: app.colors.grey
+                    Widget:
+                        size_hint_x: None
+                        width: self.height
+                AnchorLayout:
+                    anchor_y: 'top'
+                    Label:
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        size: self.texture_size
+                        size_hint_y: None
+                        text_size: [self.width,None]
+                        font_name: app.fonts.body
+                        font_size: app.fonts.size.h5
+                        color: app.colors.secondary
+                BoxLayout:
+                    size_hint_y: None
+                    height: dp(42)
+                    RoundedButton:
+                        text: 'Add to Cart | $35'
+                        font_name: app.fonts.heading
+                        color: app.colors.white
+                        bcolor: app.colors.primary
+                        radius: [dp(12)]
+                    

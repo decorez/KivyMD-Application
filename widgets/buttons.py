@@ -12,8 +12,6 @@ Builder.load_string("""
     halign: 'center'
                     
 <IconButton>:
-    size_hint: [None, None]
-    size: [dp(24), dp(24)]
     canvas.after:
         Color:
             rgba: [1,1,1,1]
@@ -50,7 +48,11 @@ class RoundedButton(FlatButton):
         self.bind(size=self.update)
 
     def update(self, *args):
-        pass
+        self.draw.pos = self.pos
+        self.draw.size = self.size
 
     def on_radius(self, *args):
         self.draw.radius = self.radius
+
+    def on_bcolor(self, *args):
+        self.paint.rgba = self.bcolor
