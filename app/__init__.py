@@ -12,7 +12,8 @@ class MainApp(App):
     colors.danger = rgba('#E86767')
     colors.success = rgba('#88D7CF')
     colors.white = rgba('#FFFFFF')
-    colors.grey = rgba('C4C4C4')
+    colors.dgrey = rgba('#36454F')
+    colors.grey = rgba('#C4C4C4')
     colors.black = rgba('#000000')
 
     fonts = QueryDict()
