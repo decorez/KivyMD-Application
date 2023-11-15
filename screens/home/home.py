@@ -22,7 +22,7 @@ class Home(BoxLayout):
                 'source': 'assets/images/evolene.png',
                 'avatar': 'assets/images/evolene.png',
                 'price': 25,
-                'color': colors.success, # any kivy color will do
+                'color': colors.success,
                 'categories': ['popular', 'discounts']
             },
             {
@@ -30,7 +30,7 @@ class Home(BoxLayout):
                 'source': 'assets/images/nutricost.jpg',
                 'avatar': 'assets/images/nutricost.jpg',
                 'price': 32,
-                'color': colors.primary, # any kivy color will do
+                'color': colors.primary,
                 'categories': ['popular', 'isolate powder']
             },
             {
@@ -38,7 +38,7 @@ class Home(BoxLayout):
                 'source': 'assets/images/optimumnutrition.png',
                 'avatar': 'assets/images/optimumnutrition.png',
                 'price': 25,
-                'color': colors.danger, # any kivy color will do
+                'color': colors.danger,
                 'categories': ['popular', 'gold standard']
             },
             {
@@ -46,7 +46,7 @@ class Home(BoxLayout):
                 'source': 'assets/images/kaged.jpg',
                 'avatar': 'assets/images/kaged.jpg',
                 'price': 28.45,
-                'color': colors.success, # any kivy color will do
+                'color': colors.success,
                 'categories': ['popular', 'discounts']
             },
             {
@@ -54,7 +54,7 @@ class Home(BoxLayout):
                 'source': 'assets/images/levels.jpg',
                 'avatar': 'assets/images/levels.jpg',
                 'price': 28.45,
-                'color': colors.success, # any kivy color will do
+                'color': colors.success,
                 'categories': ['popular']
             },
         ]
@@ -64,7 +64,7 @@ class Home(BoxLayout):
                 'source': 'assets/images/optimumnutrition.png',
                 'avatar': 'assets/images/optimumnutrition.png',
                 'price': 28.45,
-                'color': colors.success, # any kivy color will do
+                'color': colors.success,
                 'categories': ['popular']
             },
             {
@@ -72,7 +72,7 @@ class Home(BoxLayout):
                 'source': 'assets/images/kaged.jpg',
                 'avatar': 'assets/images/kaged.jpg',
                 'price': 31.25,
-                'color': colors.danger, # any kivy color will do
+                'color': colors.danger,
                 'categories': ['popular', 'discount']
             },
             {

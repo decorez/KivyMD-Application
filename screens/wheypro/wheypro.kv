@@ -79,7 +79,7 @@
                             source: 'assets/icons/fav-filled.png'
                 BoxLayout:
                     size_hint_y: None
-                    height: dp(18)
+                    height: dp(15)
                     Text:
                         text: '100% Whey Protein Powder, Double Rich Chocolate'
                         font_name: app.fonts.subheading
@@ -90,7 +90,7 @@
                         width: self.height
                 BoxLayout:
                     size_hint_y: None
-                    height: dp(18)
+                    height: dp(15)
                     BoxLayout:
                         size_hint_x: .5
                         id: stars
@@ -117,24 +117,91 @@
                     Widget:
                         size_hint_x: None
                         width: self.height
-                AnchorLayout:
-                    anchor_y: 'top'
-                    Label:
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        size: self.texture_size
-                        size_hint_y: None
-                        valign: 'top'
-                        text_size: [self.width, None]
-                        font_name: app.fonts.body
-                        font_size: app.fonts.size.h5
-                        color: app.colors.secondary
-                BoxLayout:
-                    size_hint_y: None
-                    height: dp(42)
-                    RoundedButton:
-                        text: 'Add to cart | %s'%str(root.price)
-                        font_name: app.fonts.heading
-                        color: app.colors.white
-                        bcolor: root.bcolor
-                        radius: [dp(12)]
+                ScrollView:
+                    BoxLayout:
+                        anchor_y: 'top'
+                        GridLayout:
+                            cols: 1
+                            padding: 10
+                            Label:
+                                text: "• Each serving of the world's best-selling whey protein powder provides 24 grams of high-quality whey protein primarily from Whey Protein Isolate, which has had excess carbohydrates, fat, and lactose ‘isolated’ out using sophisticated filtering technologies. The powder is also instantized for easy mixing using just a glass and spoon. With more than 20 different flavors – including naturally flavored options – there’s no doubt this is the Optimum Nutrition Gold Standard 100% Whey Protein."
+                                size: self.texture_size
+                                size_hint_y: None
+                                valign: 'top'
+                                halign: 'left'
+                                text_size: [self.width-20, None]
+                                font_name: app.fonts.body
+                                font_size: app.fonts.size.h5
+                                color: app.colors.secondary
+                            Label:
+                                text: "• Mix about one scoop of the powder into 6 to 8 fluid ounces of cold water, milk or other beverage. Stir, shake or blend until dissolved. For best results, mix up your shake 30 to 60 minutes after your workout or use as an anytime snack in your balanced diet."
+                                size: self.texture_size
+                                size_hint_y: None
+                                valign: 'top'
+                                halign: 'left'
+                                text_size: [self.width-20, None]
+                                font_name: app.fonts.body
+                                font_size: app.fonts.size.h5
+                                color: app.colors.secondary
+                            Label:
+                                text: "• For healthy adults, consume enough protein to meet your daily protein requirements with a combination of high protein foods and protein supplements throughout the day as part of a balanced diet and exercise program."
+                                size: self.texture_size
+                                size_hint_y: None
+                                valign: 'top'
+                                halign: 'left'
+                                text_size: [self.width-20, None]
+                                font_name: app.fonts.body
+                                font_size: app.fonts.size.h5
+                                color: app.colors.secondary
+                            Label:
+                                text: "• 24 Grams of Protein per Serving to Help Build and Maintain Muscle³"
+                                size: self.texture_size
+                                size_hint_y: None
+                                valign: 'top'
+                                halign: 'left'
+                                text_size: [self.width-20, None]
+                                font_name: app.fonts.body
+                                font_size: app.fonts.size.h5
+                                color: app.colors.secondary
+                            Label:
+                                text: "• 5.5 Grams of Naturally Occurring BCAAs per Serving to Support Endurance and Recovery"
+                                size: self.texture_size
+                                size_hint_y: None
+                                valign: 'top'
+                                halign: 'left'
+                                text_size: [self.width-20, None]
+                                font_name: app.fonts.body
+                                font_size: app.fonts.size.h5
+                                color: app.colors.secondary
+                            Label:
+                                text: "• 3-4G CARBS, 1-3G SUGAR, AND 1-1.5G FAT, GLUTEN FREE, No Sucralose in Double Rich Chocolate Flavor"
+                                size: self.texture_size
+                                size_hint_y: None
+                                valign: 'top'
+                                halign: 'left'
+                                text_size: [self.width-20, None]
+                                font_name: app.fonts.body
+                                font_size: app.fonts.size.h5
+                                color: app.colors.secondary
+                            Label:
+                                text: "• ANY-TIME FORMULA – great before or after exercise, between meals, with a meal, or any time of day where you need extra protein in your nutrition"
+                                size: self.texture_size
+                                size_hint_y: None
+                                valign: 'top'
+                                halign: 'left'
+                                text_size: [self.width-20, None]
+                                font_name: app.fonts.body
+                                font_size: app.fonts.size.h5
+                                color: app.colors.secondary
+                            Label:
+                                text: "• Most Awarded, Best-Selling Whey Protein Powder On The Planet"
+                                size: self.texture_size
+                                size_hint_y: None
+                                valign: 'top'
+                                halign: 'left'
+                                text_size: [self.width-20, None]
+                                font_name: app.fonts.body
+                                font_size: app.fonts.size.h5
+                                color: app.colors.secondary
+        
         
