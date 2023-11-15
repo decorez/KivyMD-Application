@@ -1,4 +1,4 @@
-# **Whey Protein Information**
+# **Whey Protein Information App**
 
 Description
 -------------
